@@ -1,6 +1,7 @@
 # Voice Infra Field Notes
 
 Welcome to Voice Infra Field Notes — a living repository of real-world engineering logs, troubleshooting stories, and project breakdowns from the desk of Jessica Anderson, a Unified Communications Engineer pivoting into the dynamic world of Cybersecurity, with a growing emphasis on securing cloud infrastructure.
+
 ---
 
 ## About This Repo
@@ -38,4 +39,5 @@ Every entry is written to showcase how theory meets production
 _“Every ticket is a story. Every config is a lesson. Every failure, a blueprint.”_
 
 &mdash; **Jessica Anderson**
+
 
