@@ -15,7 +15,7 @@ Every entry is written to showcase how theory meets production
 
 ---
 
-## 📂 Posts
+## Posts
 | Title | Description |
 |-------|-------------|
 | [Redirecting Call Traffic with a New Dial-Peer](posts/redirecting-dialpeer-call-flow.md) | How I safely rerouted CUCM calls using dial-peers, validated with CDRs |
@@ -23,14 +23,14 @@ Every entry is written to showcase how theory meets production
 
 ---
 
-## 🧠 Who This Is For
+## Who This Is For
 - UC Engineers leveling up into cloud or DevOps
 - Tech professionals transitioning from voice to infrastructure
 - Recruiters or hiring managers exploring my body of work
 
 ---
 
-## 🔗 Connect
+## Connect
 - [LinkedIn](https://www.linkedin.com/in/jessica-anderson-84b423211/) 
 - [GitHub Portfolio](https://github.com/jesmanderson)
 
@@ -39,5 +39,6 @@ Every entry is written to showcase how theory meets production
 _“Every ticket is a story. Every config is a lesson. Every failure, a blueprint.”_
 
 &mdash; **Jessica Anderson**
+
 
 
