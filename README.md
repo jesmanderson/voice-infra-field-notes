@@ -1,16 +1,14 @@
 # Voice Infra Field Notes
 
-Welcome to **Voice Infra Field Notes**, a living repository of real-world engineering logs, troubleshooting stories, and project breakdowns from the desk of Jessica Anderson — Unified Communications Engineer transitioning into Cloud, Infrastructure, and DevOps roles.
-
+Welcome to Voice Infra Field Notes — a living repository of real-world engineering logs, troubleshooting stories, and project breakdowns from the desk of Jessica Anderson, a Unified Communications Engineer pivoting into the dynamic world of Cybersecurity, with a growing emphasis on securing cloud infrastructure.
 ---
 
-## 📌 About This Repo
+## About This Repo
 This journal documents practical experience across:
 - CUCM, SBCs, and Teams Voice
 - PowerShell and Python scripting for UC automation
 - Azure infrastructure, backups, and migrations
 - Real tickets solved in production environments
-- Blockchain/DevOps hybrid projects (in progress)
 
 Every entry is written to showcase how theory meets production
 
@@ -40,3 +38,4 @@ Every entry is written to showcase how theory meets production
 _“Every ticket is a story. Every config is a lesson. Every failure, a blueprint.”_
 
 &mdash; **Jessica Anderson**
+
