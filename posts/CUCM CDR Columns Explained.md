@@ -80,6 +80,41 @@ Cisco Unified Communications Manager (CUCM) generates **Call Detail Records (CDR
 
 ---
 
+## 🔹 Cause Codes Reference
+
+CUCM uses standardized **Q.850 cause codes** to indicate why a call was disconnected. These codes appear in `origCause_value` and `destCause_value` fields.
+
+| Code | Meaning |
+|------|--------|
+| **1** | Unallocated (unassigned) number |
+| **16** | Normal call clearing |
+| **17** | User busy |
+| **18** | No user responding |
+| **19** | No answer from user (user alerted) |
+| **21** | Call rejected |
+| **22** | Number changed |
+| **27** | Destination out of order |
+| **28** | Invalid number format |
+| **29** | Facility rejected |
+| **31** | Normal, unspecified |
+| **34** | No circuit/channel available |
+| **38** | Network out of order |
+| **41** | Temporary failure |
+| **42** | Switching equipment congestion |
+| **47** | Resource unavailable |
+| **57** | Bearer capability not authorized |
+| **58** | Bearer capability not available |
+| **65** | Bearer capability not implemented |
+| **79** | Service or option not implemented |
+| **87** | User not member of call group |
+| **88** | Incompatible destination |
+| **111** | Protocol error, unspecified |
+| **127** | Interworking, unspecified |
+
+> Use these codes to understand why a call failed or was terminated. For example, code **16** means the call ended normally, while **1** or **28** may indicate dialing issues.
+
+---
+
 ## How to Use These Columns in Practice
 
 - **Find who called who** → `callingPartyNumber` → `finalCalledPartyNumber`
