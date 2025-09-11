@@ -24,7 +24,7 @@ Every entry is written to showcase how theory meets production
 ---
 
 ## Who This Is For
-- UC Engineers leveling up into cloud or DevOps
+- UC Engineers leveling up into cloud 
 - Tech professionals transitioning from voice to infrastructure
 - Recruiters or hiring managers exploring my body of work
 
@@ -39,6 +39,7 @@ Every entry is written to showcase how theory meets production
 _“Every ticket is a story. Every config is a lesson. Every failure, a blueprint.”_
 
 &mdash; **Jessica Anderson**
+
 
 
 
