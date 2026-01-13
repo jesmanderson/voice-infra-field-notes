@@ -1,4 +1,4 @@
-# SBC (Ribbon) Concepts — Field Notes
+# SBC (Ribbon) Concepts
 
 As a UC engineer working in a hybrid world of CUCM, Teams, and global carrier interconnects, understanding Session Border Controllers (SBCs) is mission-critical. Here’s a breakdown of what an SBC is, why it’s used, and how I work with CRTs, TTs, and call flow configurations specifically on the Ribbon SBC 2000.
 
@@ -68,7 +68,6 @@ The basic building blocks of a call flow inside a Ribbon SBC include:
 
 ---
 
-## Summary
-SBCs aren’t just hardware, they’re the voice firewall, router, and security gatekeeper for your entire VoIP ecosystem. Learning how CRTs and TTs work helps you master call routing logic, especially in global or multi-system deployments like CUCM + Teams + carriers.
+
 
 
