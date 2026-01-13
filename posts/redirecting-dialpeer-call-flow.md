@@ -1,16 +1,16 @@
 # Redirecting Call Traffic: How I Used a New Dial-Peer to Route External Calls to a New CUCM
 
-This post breaks down how I used the Cisco VG CLI to point external calls to a new CUCM server — without interrupting service.
+This post breaks down how I used the Cisco VG CLI to point external calls to a new CUCM server, without interrupting service.
 
 ---
 
-## 🧩 Background
+## Background
 
 We were migrating users to a **new CUCM cluster**, but some external calls were still routing through the old CUCM. My goal was to **re-route outbound calls** to the new CUCM without disrupting current service.
 
 ---
 
-## 🔐 Step 1: Access the Voice Gateway
+## Step 1: Access the Voice Gateway
 
 Used **PuTTY** to SSH into the voice gateway.
 
@@ -22,7 +22,7 @@ Reviewed current dial-peers and identified the one sending calls to the old CUCM
 
 ---
 
-## ⚙️ Step 2: Create the New Dial-Peer
+## Step 2: Create the New Dial-Peer
 
 Instead of removing the old CUCM dial-peer, I **created a new one** pointing to the new CUCM:
 
@@ -41,7 +41,7 @@ dial-peer voice 4000 voip
 
 ---
 
-## 🧪 Step 3: Testing & Verification
+## Step 3: Testing & Verification
 
 - Placed an outbound test call
 - Pulled **CDR logs** from the CUCM
@@ -52,7 +52,7 @@ In the CDR:
 
 ---
 
-## 📊 Step 4: Documenting in Excel
+## Step 4: Documenting in Excel
 
 - Exported the CDR logs to CSV
 - Used filters in Excel to isolate test calls
@@ -65,16 +65,16 @@ In the CDR:
 
 ---
 
-## ✅ Outcome
+## Outcome
 
-> With a single CLI update, I corrected our outbound call flow to align with the new infrastructure — no outages, no drama.
+> With a single CLI update, I corrected our outbound call flow to align with the new infrastructure, no outages.
 
 ---
 
-## 🔁 Lessons Learned
+## Lessons Learned
 
-- You don’t always need to delete old dial-peers — layering new logic can be safer.
-- Test, verify, document — especially when working on production voice systems.
+- You don’t always need to delete old dial-peers, layering new logic can be safer.
+- Test, verify, document, especially when working on production voice systems.
 
 ---
 
