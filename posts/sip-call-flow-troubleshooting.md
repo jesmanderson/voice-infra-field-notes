@@ -1,10 +1,10 @@
-# 📞 How I Troubleshoot SIP Call Flows (Field Notes)
+# How I Troubleshoot SIP Call Flows
 
 As a UC engineer working with CUCM, Ribbon SBC, and Teams Voice, one of the most important skills I’ve developed is being able to troubleshoot SIP call flows quickly and confidently. Here’s a breakdown of my personal workflow that I follow when something goes wrong with voice routing.
 
 ---
 
-## 🧭 1. Understand the Call Path
+## 1. Understand the Call Path
 Before anything else, I sketch (mentally or visually) the expected call flow:
 
 Example:
@@ -16,7 +16,7 @@ This helps narrow down where to start based on symptoms (e.g., no audio vs. call
 
 ---
 
-## 🔍 2. Collect Key Info
+## 2. Collect Key Info
 I always start with this checklist:
 - Calling number and called number
 - Timestamp of the failed call attempt
@@ -26,16 +26,16 @@ I always start with this checklist:
 
 ---
 
-## 🧪 3. Check SIP Signaling Logs
+## 3. Check SIP Signaling Logs
 
-### 📍 SBC (Ribbon)
+### SBC (Ribbon)
 - Go to **Call Logs** or **SIP Ladder Diagrams**
 - Look for:
   - `INVITE`, `100 Trying`, `183 Session Progress`, `200 OK`, `BYE`
   - Any `404`, `403`, or `503` errors
   - Media IP addresses (for one-way audio issues)
 
-### 🧭 CUCM
+###  CUCM
 - Use **CDR / CMR** to trace calls:
   - Filter by originalCalledPartyNumber or callingPartyNumber
   - Check if the call ever reaches CUCM
@@ -43,7 +43,7 @@ I always start with this checklist:
 
 ---
 
-## ⚙️ 4. Test with Dialed Number Analyzer (CUCM)
+## 4. Test with Dialed Number Analyzer (CUCM)
 - Use **DNA Tool** to simulate how CUCM handles the dialed number
 - Look at:
   - Translation Pattern matches
@@ -51,7 +51,7 @@ I always start with this checklist:
 
 ---
 
-## 🧰 5. Use Wireshark (Only When Needed)
+## 5. Use Wireshark (Only When Needed)
 - Run a packet capture on SBC or VG
 - Filter with: `sip` or `ip.addr==<IP>`
 - Follow the SIP conversation
@@ -59,7 +59,7 @@ I always start with this checklist:
 
 ---
 
-## 🧹 6. Common Fixes
+## 6. Common Fixes
 - Dial Peer not pointing to correct session target
 - Missing Route Pattern for full E.164 number
 - Translation Pattern rewriting issue
@@ -69,7 +69,7 @@ I always start with this checklist:
 
 ---
 
-## 💬 Example Real Ticket
+##  Example Real Ticket
 > Caller says: "Call rings but no audio"
 
 What I did:
@@ -79,7 +79,6 @@ What I did:
 
 ---
 
-## ✍🏽 Final Notes
+## Final Notes
 Troubleshooting SIP is like reading a story — the `INVITE` is the intro, the `200 OK` is the peak, and the `BYE` is the ending. My job is to find where the story breaks and why.
 
-Let me know if you want my SIP log analysis templates or want to turn this into a real video tutorial!
