@@ -1,4 +1,4 @@
-# Understanding VoIP Protocols (Field Notes)
+# VoIP Protocols Explained
 
 One of the foundational skills of a UC engineer is knowing how VoIP protocols work under the hood. This helps with designing voice networks, troubleshooting call issues, and communicating with network and security teams. Here's my quick breakdown and how I apply it in real work.
 
@@ -54,6 +54,7 @@ In my role, I’ve had to:
 
 ## Summary
 Understanding these protocols takes your troubleshooting from reactive to proactive. SIP handles the conversation setup. RTP carries the conversation itself. MGCP controls analog lines. And H.323 is your legacy friend you’ll still see now and then.
+
 
 
 
